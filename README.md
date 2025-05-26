@@ -1,3 +1,12 @@
+James Eyler
+ja459209
+
+THEME: SPACE SYSTEMS
+This system is used to show when messages (data packets) are both recieved and later process, I used two different
+messages to shows this but also still followed the guidelines of having the print_task having a period of 10s. I
+have the green LED indicating that the messages are being recieved (green for good) and have the blinking process
+have a period of 500ms as the assignment asked.
+
 ANALYSIS / ENGINEERING:
 1. VARYING PRIORITIES
    - When changing the print task priority to a higher priority than the blink task priority, there was not
@@ -48,3 +57,10 @@ EXTRA CREDIT MATERIAL
   Although I knew to take time stamps for the significant moments in time (initial_time, current_time), I used CHAT GPT in
   order to obtain the correct syntax (TickType_t, xTaskGetTickCount, xTaskGetTickCount). I then incorporated my own counters
   in order for the program to only print the determined period one time.
+
+- Extra Thought
+  This is the first application assignment and I did not want to go too off script but I believe that to make this
+  real life applicable system you could have a different LED (blue LED) that is connected to another GPIO that would
+  signal the second message that is sent to the console showing "message processed" or maybe for the period in betweem
+  the NEW message and UPDATE message, the LED output would switch to the blue to show there is maybe decoding of the
+  data in this time period.
